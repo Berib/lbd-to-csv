@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Letterboxd List Exporter",
+  "version": "1.0",
+  "description": "Exports Letterboxd lists to CSV",
+  "content_scripts": [{
+    "matches": [
+      "*://letterboxd.com/*/list/*",
+      "*://letterboxd.com/*/list/*/page/*"
+    ],
+    "js": ["content.js"],
+    "run_at": "document_end"
+  }],
+  "permissions": [
+    "activeTab",
+    "webNavigation"
+  ]
+}
