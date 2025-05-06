@@ -1,4 +1,4 @@
-// Helper: Get current page number from URL
+// Get current page number from URL
 function currentPageNumber() {
   const match = window.location.pathname.match(/\/page\/(\d+)/);
   return match ? parseInt(match[1]) : 1;
